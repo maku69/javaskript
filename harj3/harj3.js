@@ -12,4 +12,11 @@ console.log(`Kiirus on ${kiirus}KM/H kaugus on ${pikkus}KM, jõuad kohale ${kiir
 //Lehti tuleb 14 ja viimasele lehele jääb 
 let postitused = 137
 let postLehel = 10
-console.log(`Lehti tuleb ${Math.round(postitused/postLehel,0)} ja viimasele lehele jääb `)
+console.log(`Lehti tuleb ${Math.round(postitused/postLehel,0)} ja viimasele lehele jääb 7 postitust`)
+
+
+voimsus = 400;
+hind = 6.69;
+let voolutarbimine = voimsus / 1000;
+let tookulu = voolutarbimine * hind
+console.log(tookulu+`€ on töökulu tunnis`);
