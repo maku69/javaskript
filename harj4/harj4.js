@@ -1,13 +1,19 @@
-//Paranda massiiv ja kuva selle elemendid
+/*
+Markus Pilv
+31.10.2024 10:30
+hajr4
+*/
+
+//haamriga toksimine
 let nadalapaevad = ["Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede"];
-//Kuva massiivi suurus
+//massiivi suurus
 console.log(nadalapaevad.length);
-//Lisa lõppu koodi abiga Laupäev ja Pühapäev
+//loppu Laupäev ja Pühapäev
 nadalapaevad.push("Laupaev", "Puhapaev");
-//Sorteeri elemendid kahanevalt
+//elemendid kahanevalt
 nadalapaevad.sort();
 nadalapaevad.reverse();
-//Kuva viimane element
+//viimane element
 let viimaneElement = nadalapaevad[nadalapaevad.length - 1];
 console.log(viimaneElement);
 console.log (nadalapaevad)

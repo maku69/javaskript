@@ -1,7 +1,7 @@
 /*
 Markus Pilv
 31.10.2024 10:30
-hajr4
+hajr5
 */
 
 temperatuur = 12;

@@ -1,3 +1,8 @@
+/*
+Markus Pilv
+31.10.2024 10:30
+hajr6
+*/
 let külalised = 2;
 switch (külalised) {
     //Kui broneeringu arv on 1 või 2, väljasta teade: “Valige laud kahele inimesele.”

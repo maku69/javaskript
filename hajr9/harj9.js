@@ -15,13 +15,13 @@ const noolFunktsioon = () => {
     noolFunktsioon();
 //__________________________________________________________
 
-function kuupaevEesti(kuupaev) {
+function kuupaev(kuupaev) {
     const kuud = ["JAANUAR", "VEEBRUAR", "MÄRTS", "APRILL", "MAI", "JUUNI", "JUULI", "AUGUST", "SEPTEMBER", "OKTOOBER", "NOVEMBER", "DETSEMBER"];
     const kuupaev1 = new Date(kuupaev);
     console.log(`${kuupaev1.getDate()}. ${kuud[kuupaev1.getMonth()]} ${kuupaev1.getFullYear()}`);
 }
 
-kuupaevEesti("2023-07-19");
+kuupaev("2023-07-19");
 
 //_____________________________________________________________
 
