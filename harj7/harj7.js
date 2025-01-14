@@ -6,13 +6,10 @@ hajr7
 
 
 const products = ["Õunad", "Piim", "Leib", "Juust", "Tomatid", "Kanafilee", "Muna", "Sibul", "Apelsinid", "Riis", "Jogurt", "Kartul", "Kalafilee", "Pasta", "Jogurtijook", "Porgandid", "Virsikud", "Pähklid", "Rosinad", "Kapsas", "Kreeka jogurt", "Veiseliha", "Banaanid", "Oliivid", "Mandlid", "Magus kartul", "Greibid"];
-
   const keelatud = ['Muna', 'Sibul', 'Riis'];
-
+  //https://www.w3schools.com/jsref/jsref_filter.asp
   const filter = products.filter(toode => !keelatud.includes(toode));
-  
   const kumme = filter.slice(0, 10);
-  
   kumme.forEach((toode, indeks) => {
     console.log(`${indeks + 1}. ${toode}`);
   });
@@ -48,23 +45,23 @@ for (let i = 0; i < temperatures.length; i++) {
 }
 
 //korgem/madalam
-let highestTemp = temperatures[0][0];
-let lowestTemp = temperatures[0][0];
-let highestMonth = month1[0];
-let lowestMonth = month1[0];
+let korgTemp = temperatures[0][0];
+let madalTemp = temperatures[0][0];
+let korgKuu = month1[0];
+let madalKuu = month1[0];
 
 for (let i = 0; i < temperatures.length; i++) {
   let monthMax = Math.max(...temperatures[i]); 
   let monthMin = Math.min(...temperatures[i]); 
-  if (monthMax > highestTemp) {
-    highestTemp = monthMax;
-    highestMonth = month1[i];
+  if (monthMax > korgTemp) {
+    korgTemp = monthMax;
+    korgKuu = month1[i];
   }
-  if (monthMin < lowestTemp) {
-    lowestTemp = monthMin;
-    lowestMonth = month1[i];
+  if (monthMin < madalTemp) {
+    madalTemp = monthMin;
+    madalKuu = month1[i];
   }
 }
 //maitea mida see teeb
-console.log("Kõige kõrgem temperatuur oli " + highestTemp + "°C kuus " + highestMonth);
-console.log("Kõige madalam temperatuur oli " + lowestTemp + "°C kuus " + lowestMonth);
+console.log("Kõige kõrgem temperatuur oli " + korgTemp + "°C kuus " + korgKuu);
+console.log("Kõige madalam temperatuur oli " + madalTemp + "°C kuus " + madalKuu);

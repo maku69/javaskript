@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementidele juurdepääs DOM-is</title>
+        <style>
+            body{max-width:500px;margin:0 auto;padding:0 15px}article,div{padding:10px;margin:5px;border:1px solid #dedede}
+        </style>
+    </head>
+    <body>
+        <h1>Elementidele juurdepääs DOM-is</h1>
+        <h2>Märgend (article)</h2>
+        <article>Juurdepääs märgendi kaudu (1)</article>
+        <article>Juurdepääs märgendi kaudu (2)</article>
+        <h2>ID (#demo)</h2>
+        <div id="container">
+            <p>See on esimene lõik</p>
+        </div>
+        <h2>Klass (.demo)</h2>
+        <div class="demo">Juurdepääs klassi kaudu (1)</div>
+        <div class="demo">Juurdepääs klassi kaudu (2)</div>
+
+        <script src="test.js" async="async" defer="defer"></script>
+    </body>
+</html>

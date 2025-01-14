@@ -19,9 +19,10 @@ function kuvaOstukorv() {
     let kogusumma = 0;
 
     ostukorv.tooted.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.nimi} - Hind: ${item.hind}€, Kogus: ${item.kogus}`;
-        ostukorvElement.appendChild(li);
+        //https://stackoverflow.com/questions/65782965/how-can-i-display-bullet-points-properly-from-a-string
+        const tapploend = document.createElement('li');
+        tapploend.textContent = `${item.nimi} - Hind: ${item.hind}€, Kogus: ${item.kogus}`;
+        ostukorvElement.appendChild(tapploend);
         kogusumma += item.hind * item.kogus;
     });
 
