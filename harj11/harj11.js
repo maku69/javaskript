@@ -25,12 +25,12 @@ function otsiNimi(nimi, nimed) {
     return leitudNimed.length > 0 ? leitudNimed : "Nime pole";
 }
 
-const otsitavNimi = "Pede";
-const leitudNimed = otsiNimi(otsitavNimi, nimed);
-console.log(`Nimi "${otsitavNimi}" `);
+const Nig1 = "Pede";
+const leitudNimed = otsiNimi(Nig1, nimed);
+console.log(`Nimi "${Nig1}" `);
 console.log(leitudNimed);
 //___________________________________________________________________-
-const inimesteAndmed = [
+const isikandmed = [
     { nimi: "Mari Maasikas", isikukood: "38705123568" },
     { nimi: "Jaan Jõesaar", isikukood: "49811234567" },
     { nimi: "Kristiina Kukk", isikukood: "39203029876" },
@@ -40,9 +40,9 @@ const inimesteAndmed = [
     { nimi: "Markus Pilv", isikukood: "50604062013" },
 ];
 
-inimesteAndmed.forEach(function (isik) {
+isikandmed.forEach(function (isik) {
     const sünnikuupäev = isik.isikukood.slice(5, 7) + '/' + isik.isikukood.slice(3, 5) + '/' + isik.isikukood.slice(1, 3);
-
+//parseInt teeb stringi numbriks
     const sünniaasta = parseInt(isik.isikukood.slice(1, 3), 10) > 21 ? 1900 + parseInt(isik.isikukood.slice(1, 3), 10) : 2000 + parseInt(isik.isikukood.slice(1, 3), 10);
     const praeguneAasta = new Date().getFullYear();
     const vanus = praeguneAasta - sünniaasta;
@@ -51,7 +51,7 @@ inimesteAndmed.forEach(function (isik) {
     isik.sünnikuupäev = sünnikuupäev;
 });
 
-inimesteAndmed.forEach(function (isik) {
+isikandmed.forEach(function (isik) {
     console.log(`${isik.nimi}: Isikukood ${isik.isikukood}, Vanus ${isik.vanus}, Sünnikuupäev ${isik.sünnikuupäev}`);
 });
 //_____________________________________________________________________________________________________________________________________________

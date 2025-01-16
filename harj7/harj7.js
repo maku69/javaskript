@@ -5,10 +5,10 @@ hajr7
 */
 
 
-const products = ["Õunad", "Piim", "Leib", "Juust", "Tomatid", "Kanafilee", "Muna", "Sibul", "Apelsinid", "Riis", "Jogurt", "Kartul", "Kalafilee", "Pasta", "Jogurtijook", "Porgandid", "Virsikud", "Pähklid", "Rosinad", "Kapsas", "Kreeka jogurt", "Veiseliha", "Banaanid", "Oliivid", "Mandlid", "Magus kartul", "Greibid"];
+const produc = ["Õunad", "Piim", "Leib", "Juust", "Tomatid", "Kanafilee", "Muna", "Sibul", "Apelsinid", "Riis", "Jogurt", "Kartul", "Kalafilee", "Pasta", "Jogurtijook", "Porgandid", "Virsikud", "Pähklid", "Rosinad", "Kapsas", "Kreeka jogurt", "Veiseliha", "Banaanid", "Oliivid", "Mandlid", "Magus kartul", "Greibid"];
   const keelatud = ['Muna', 'Sibul', 'Riis'];
   //https://www.w3schools.com/jsref/jsref_filter.asp
-  const filter = products.filter(toode => !keelatud.includes(toode));
+  const filter = produc.filter(toode => !keelatud.includes(toode));
   const kumme = filter.slice(0, 10);
   kumme.forEach((toode, indeks) => {
     console.log(`${indeks + 1}. ${toode}`);
